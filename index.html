@@ -5,20 +5,25 @@
     <link rel="manifest" href="manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Music</title>
+    <title>Images</title>
   </head>
   <body>
     <script src="script.js" async></script>
     <script src="ServiceWorker.js" async></script>
-
+    <div class="tags-input"> 
+      <ul id="tags"></ul> 
+      <input type="text" id="input-tag" 
+          placeholder="Add a tag" /> 
+    </div> 
     <div class="settings">
       <button onclick="createObjects()">Обновить данные</button>
     </div>
+    
     <div class="wrapper"></div>
     <div class="wrapperLog hidden"></div>
     <div class="log">
-      <div class="musicPage">Музыка</div>
-      <div class="logPage">Логи</div>
+      <div class="musicPage">Show</div>
+      <div class="logPage">Show and Cache</div>
     </div>
   </body>
 </html>
