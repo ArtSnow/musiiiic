@@ -10,20 +10,19 @@
   <body>
     <script src="script.js" async></script>
     <script src="ServiceWorker.js" async></script>
+    
     <div class="tags-input"> 
       <ul id="tags"></ul> 
       <input type="text" id="input-tag" 
           placeholder="Add a tag" /> 
     </div> 
+    
     <div class="settings">
-      <button onclick="createObjects()">Обновить данные</button>
+      <button onclick="createObjects()">Show</button>
+      <button onclick="createObjects()">Show and Cache</button>
     </div>
     
     <div class="wrapper"></div>
-    <div class="wrapperLog hidden"></div>
-    <div class="log">
-      <div class="musicPage">Show</div>
-      <div class="logPage">Show and Cache</div>
-    </div>
+  
   </body>
 </html>
