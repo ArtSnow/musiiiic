@@ -20,36 +20,6 @@ body {
   margin-bottom: 10vh;
 }
 
-.wrapperLog {
-  width: 100vw;
-  height: fit-content;
-  background-color: darkgray;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10vh;
-}
-
-.sound-wrapper {
-  width: 90%;
-  height: 75px;
-  min-height: 55px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 10px;
-  align-items: center;
-  font-size: 20px;
-  border: 1px solid wheat;
-  border-radius: 10px;
-  margin: 10px;
-  flex-direction: row;
-}
-
-img {
-  width: 2.5vh;
-}
-
 .load {
   background: gray;
   border-radius: 10px;
@@ -73,28 +43,6 @@ img {
   border: 1px solid wheat;
   font-family: sans-serif;
   font-size: 18px;
-}
-
-.log {
-  width: 100vw;
-  height: 10vh;
-  background: #475365;
-  bottom: 0;
-  position: fixed;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  gap: 10px;
-  font-size: 24px;
-  font-family: sans-serif;
-  color: wheat;
-}
-
-.log > div {
-  padding: 5px;
 }
 
 .hidden {
