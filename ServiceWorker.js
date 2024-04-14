@@ -32,7 +32,7 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  const cacheControlHeader = request.headers.get('X-Cache-Control');
+  const cacheControlHeader = event.request.headers.get('X-Cache-Control');
   console.log(cacheControlHeader)
 
   if (cacheControlHeader == 'no-cache') {
