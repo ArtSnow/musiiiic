@@ -28,11 +28,16 @@ if ("serviceWorker" in navigator) {
   console.log("Service Worker не поддерживается в данном браузере.");
 }
 
-let wrapper = document.querySelector(".wrapper");
+async function showImage() {
 
-function showImage() {
-    var src = document.getElementById('input-tag').value,
-        img = document.createElement('img');
-    img.src = src;
-    wrapper.appendChild(img);
+  var src = document.getElementById('input-tag').value,
+      img = document.createElement('img');
+  const response = await fetch(src);
+  const imageObjectURL = URL.createObjectURL(await response.blob());
+  img.src = imageObjectURL;
+  wrapper.appendChild(img);
 }
+
+
+
+let wrapper = document.querySelector(".wrapper");
