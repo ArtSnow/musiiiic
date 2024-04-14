@@ -32,7 +32,7 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  console.log(event.cache)
+  console.log('asdfgas')
   if (event.cache == 'no-store') {
     event.respondWith(
       // Пытаемся загрузить ресурс из сети
