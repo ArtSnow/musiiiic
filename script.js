@@ -29,20 +29,16 @@ if ("serviceWorker" in navigator) {
 }
 
 async function showImage() {
-  var src = document.getElementById('input-tag').value,
-      img = document.createElement('img');
-  img.src = src;
-  wrapper.appendChild(img);
+  image.src = document.getElementById('input-tag').value;
 }
 
 async function showAndCacheImage() {
-  var src = document.getElementById('input-tag').value,
-      img = document.createElement('img');
+  var src = document.getElementById('input-tag').value;
   const response = await fetch(src);
   const imageObjectURL = URL.createObjectURL(await response.blob());
-  img.src = imageObjectURL;
-  wrapper.appendChild(img);
+  image.src = imageObjectURL;
 }
 
 
 let wrapper = document.querySelector(".wrapper");
+let image = document.querySelector(".image");
