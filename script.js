@@ -29,7 +29,13 @@ if ("serviceWorker" in navigator) {
 }
 
 async function showImage() {
+  var src = document.getElementById('input-tag').value,
+      img = document.createElement('img');
+  img.src = src;
+  wrapper.appendChild(img);
+}
 
+async function showAndCacheImage() {
   var src = document.getElementById('input-tag').value,
       img = document.createElement('img');
   const response = await fetch(src);
@@ -37,7 +43,6 @@ async function showImage() {
   img.src = imageObjectURL;
   wrapper.appendChild(img);
 }
-
 
 
 let wrapper = document.querySelector(".wrapper");

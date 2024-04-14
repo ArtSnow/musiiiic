@@ -1,10 +1,10 @@
 const CACHE_NAME = "nik-v1"; // Увеличиваем версию кэша
 const urlsToCache = [
-  "/",
-  "/manifest.json",
-  "/icon.png",
-  "/style.css",
-  "/script.js",
+  "/musiiiic/",
+  "/musiiiic/manifest.json",
+  "/musiiiic/icon.png",
+  "/musiiiic/style.css",
+  "/musiiiic/script.js",
 ];
 
 self.addEventListener("install", (event) => {
