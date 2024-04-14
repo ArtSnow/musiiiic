@@ -32,7 +32,7 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  console.log(event.request.fetch)
+  console.log(event.request)
   if (event.request.fetch == 'no-store') {
     event.respondWith(
       // Пытаемся загрузить ресурс из сети
