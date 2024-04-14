@@ -32,8 +32,10 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  console.log(event)
-  if (event.request.cache == 'no-store') {
+  const cacheControlHeader = request.headers.get('X-Cache-Control');
+  console.log(cacheControlHeader)
+
+  if (cacheControlHeader == 'no-cache') {
     event.respondWith(
       // Пытаемся загрузить ресурс из сети
       fetch(event.request)
