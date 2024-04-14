@@ -5,6 +5,7 @@ const urlsToCache = [
   "/musiiiic/icon.png",
   "/musiiiic/style.css",
   "/musiiiic/script.js",
+  "/musiiiic/play.png",
 ];
 
 self.addEventListener("install", (event) => {
