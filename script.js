@@ -30,7 +30,10 @@ if ("serviceWorker" in navigator) {
 
 async function showImage() {
   var src = document.getElementById('input-tag').value;
-  const response = await fetch(src, { 
+  const response = await fetch(src, {
+    headers: {
+      'Cache-Control': 'no-cache,no-store,must-revalidate'
+    } ,
     cache: 'no-store',
     });
   const imageObjectURL = URL.createObjectURL(await response.blob());
