@@ -15,7 +15,7 @@ class sound {
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("ServiceWorker.js")
+      .register("/musiiiic/ServiceWorker.js")
       .then((registration) => {
         logArr.push(`"Service Worker зарегистрирован с областью видимости:",
         ${registration.scope}`);
